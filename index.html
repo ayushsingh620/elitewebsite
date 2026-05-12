@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elite Editing Hub — Premium Creative Agency for Marketers</title>
+  <meta name="description" content="Elite Editing Hub is a premium creative agency serving affiliate marketers and network marketers with video editing, graphic design, social media management, and copywriting services." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-text">Elite Editing Hub</div>
+  </div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- THREE.JS CANVAS -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- TOAST -->
+  <div id="toast" class="toast"></div>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">Elite Editing Hub</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Get Started</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="nav-cta">Get Started</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="hero-heading anim-reveal">We Make Your Brand<br />Impossible to Ignore</h1>
+      <p class="hero-sub anim-reveal">Premium creative services built for affiliate and network marketers who want to dominate their market.</p>
+      <div class="hero-btns anim-reveal">
+        <a href="#portfolio" class="btn btn-filled">View Our Work</a>
+        <a href="#contact" class="btn btn-outline">Get a Quote</a>
+      </div>
+      <div class="stats-strip anim-reveal">
+        <div class="stat-item"><span class="count-up" data-target="150">0</span>+ <small>Clients</small></div>
+        <div class="stat-item"><span class="count-up" data-target="1000">0</span>+ <small>Projects</small></div>
+        <div class="stat-item"><span class="count-up" data-target="98">0</span>% <small>Satisfaction</small></div>
+        <div class="stat-item"><span class="count-up" data-target="5">0</span> <small>Star Rating</small></div>
+      </div>
+    </div>
+    <div class="section-divider"></div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-heading anim-reveal">What We Craft</h2>
+      <div class="services-grid">
+        <div class="card anim-reveal">
+          <div class="card-top-border"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 64 64" class="icon-draw"><rect x="8" y="8" width="48" height="36" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><polygon points="20,30 28,22 38,32 44,26 56,38 56,44 8,44 8,38" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="48" cy="52" r="4" fill="none" stroke="currentColor" stroke-width="2"/><line x1="44" y1="52" x2="28" y2="52" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Video Editing</h3>
+          <p>High-retention edits built to convert viewers into buyers.</p>
+        </div>
+        <div class="card anim-reveal">
+          <div class="card-top-border"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 64 64" class="icon-draw"><rect x="10" y="6" width="44" height="52" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="28" r="10" fill="none" stroke="currentColor" stroke-width="2"/><line x1="18" y1="46" x2="46" y2="46" stroke="currentColor" stroke-width="2"/><line x1="22" y1="52" x2="42" y2="52" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Graphic Design &amp; Thumbnails</h3>
+          <p>Click-worthy visuals that stop the scroll.</p>
+        </div>
+        <div class="card anim-reveal">
+          <div class="card-top-border"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 64 64" class="icon-draw"><circle cx="32" cy="32" r="24" fill="none" stroke="currentColor" stroke-width="2"/><path d="M32 8 A24 24 0 0 1 56 32" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/><circle cx="20" cy="28" r="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="44" cy="28" r="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M22 40 Q32 48 42 40" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Social Media Management</h3>
+          <p>Consistent strategic presence that builds trust and sales.</p>
+        </div>
+        <div class="card anim-reveal">
+          <div class="card-top-border"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 64 64" class="icon-draw"><path d="M16 8 L12 56 L32 48 L52 56 L48 8 Z" fill="none" stroke="currentColor" stroke-width="2"/><line x1="20" y1="20" x2="44" y2="20" stroke="currentColor" stroke-width="2"/><line x1="20" y1="28" x2="40" y2="28" stroke="currentColor" stroke-width="2"/><line x1="20" y1="36" x2="36" y2="36" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Copywriting &amp; Content Writing</h3>
+          <p>Words engineered to sell, persuade, and grow your network.</p>
+        </div>
+      </div>
+    </div>
+    <div class="section-divider"></div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2 class="section-heading anim-reveal">Before vs After</h2>
+      <div class="portfolio-grid">
+        <!-- Slider 1 -->
+        <div class="ba-slider anim-reveal">
+          <div class="ba-label">Thumbnail Design</div>
+          <div class="ba-container">
+            <div class="ba-before">
+              <div class="ba-thumb-before">
+                <span class="ba-plain-title">My Video Title</span>
+                <span class="ba-plain-sub">Click here to watch</span>
+              </div>
+            </div>
+            <div class="ba-after">
+              <div class="ba-thumb-after">
+                <span class="ba-rich-title">🔥 EXPLOSIVE RESULTS</span>
+                <span class="ba-rich-sub">The #1 Secret Top Marketers Use</span>
+                <span class="ba-rich-badge">WATCH NOW</span>
+              </div>
+            </div>
+            <input type="range" min="0" max="100" value="50" class="ba-range" aria-label="Before and after slider" />
+            <div class="ba-handle"></div>
+          </div>
+        </div>
+        <!-- Slider 2 -->
+        <div class="ba-slider anim-reveal">
+          <div class="ba-label">Social Media Graphic</div>
+          <div class="ba-container">
+            <div class="ba-before">
+              <div class="ba-social-before">
+                <p>Check out our new product! It's really good and you should buy it. Link in bio.</p>
+              </div>
+            </div>
+            <div class="ba-after">
+              <div class="ba-social-after">
+                <div class="ba-social-after-badge">NEW DROP</div>
+                <p class="ba-social-after-headline">Transform Your Results in 30 Days</p>
+                <p class="ba-social-after-cta">→ Tap link to claim your spot</p>
+              </div>
+            </div>
+            <input type="range" min="0" max="100" value="50" class="ba-range" aria-label="Before and after slider" />
+            <div class="ba-handle"></div>
+          </div>
+        </div>
+        <!-- Slider 3 -->
+        <div class="ba-slider anim-reveal">
+          <div class="ba-label">Copywriting</div>
+          <div class="ba-container">
+            <div class="ba-before">
+              <div class="ba-copy-before">
+                <p>We sell good products. Our products are great and affordable. Buy from us today. We have the best prices.</p>
+              </div>
+            </div>
+            <div class="ba-after">
+              <div class="ba-copy-after">
+                <p><strong>Tired of watching others succeed?</strong></p>
+                <p>Join 10,000+ marketers who scaled to 6 figures using our proven system.</p>
+                <p class="ba-copy-after-cta">⚡ Your empire starts here.</p>
+              </div>
+            </div>
+            <input type="range" min="0" max="100" value="50" class="ba-range" aria-label="Before and after slider" />
+            <div class="ba-handle"></div>
+          </div>
+        </div>
+      </div>
+      <div class="result-badges anim-reveal">
+        <div class="result-badge"><span class="count-up" data-target="3">0</span>x <small>CTR Increase</small></div>
+        <div class="result-badge"><span class="count-up" data-target="2">0</span>x <small>Engagement</small></div>
+        <div class="result-badge"><span class="count-up" data-target="5">0</span>x <small>Conversions</small></div>
+      </div>
+    </div>
+    <div class="section-divider"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container about-layout">
+      <div class="about-left anim-reveal">
+        <div class="about-watermark">EEH</div>
+        <blockquote class="about-quote">"Excellence is not optional — it's our standard."</blockquote>
+        <p>Elite Editing Hub is a premium creative agency dedicated to helping affiliate and network marketers grow their brand through world-class content and design. We understand the digital landscape and craft content that doesn't just look good — it converts.</p>
+        <p>From scroll-stopping thumbnails to persuasive copy that closes deals, our team delivers excellence at every touchpoint. We don't do average. We do elite.</p>
+      </div>
+      <div class="about-right anim-reveal">
+        <div class="about-stat-box"><span class="count-up" data-target="150">0</span>+ <small>Clients</small></div>
+        <div class="about-stat-box"><span class="count-up" data-target="1000">0</span>+ <small>Projects Delivered</small></div>
+        <div class="about-stat-box"><span class="count-up" data-target="98">0</span>% <small>Client Satisfaction</small></div>
+      </div>
+    </div>
+    <div class="section-divider"></div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <h2 class="section-heading anim-reveal">What Our Clients Say</h2>
+    </div>
+    <div class="ticker-wrapper anim-reveal">
+      <div class="ticker">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Our video content went from basic to absolutely elite. Sales doubled."</p>
+          <span class="tc-name">— Rahul M., Affiliate Marketer</span>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"The thumbnail designs they made tripled my YouTube CTR in 2 weeks."</p>
+          <span class="tc-name">— Priya S., Network Marketer</span>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Best investment I made for my brand. Pure professionalism."</p>
+          <span class="tc-name">— Arjun K., Digital Entrepreneur</span>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"They transformed our social media presence completely."</p>
+          <span class="tc-name">— Sneha R., MLM Leader</span>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Copy that actually converts. These guys know their craft."</p>
+          <span class="tc-name">— Vikram T., Affiliate Marketer</span>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Fast delivery, premium quality, exceptional results every time."</p>
+          <span class="tc-name">— Meena D., Brand Builder</span>
+        </div>
+        <!-- Duplicate for infinite scroll -->
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Our video content went from basic to absolutely elite. Sales doubled."</p>
+          <span class="tc-name">— Rahul M., Affiliate Marketer</span>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"The thumbnail designs they made tripled my YouTube CTR in 2 weeks."</p>
+          <span class="tc-name">— Priya S., Network Marketer</span>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Best investment I made for my brand. Pure professionalism."</p>
+          <span class="tc-name">— Arjun K., Digital Entrepreneur</span>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"They transformed our social media presence completely."</p>
+          <span class="tc-name">— Sneha R., MLM Leader</span>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Copy that actually converts. These guys know their craft."</p>
+          <span class="tc-name">— Vikram T., Affiliate Marketer</span>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Fast delivery, premium quality, exceptional results every time."</p>
+          <span class="tc-name">— Meena D., Brand Builder</span>
+        </div>
+      </div>
+    </div>
+    <div class="section-divider"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-heading anim-reveal">Ready to Go Elite?</h2>
+      <div class="contact-layout">
+        <div class="contact-info anim-reveal">
+          <h3>Get in Touch</h3>
+          <p class="contact-detail"><span class="contact-icon">📞</span> +91 6284621183</p>
+          <a href="https://wa.me/916284621183" target="_blank" rel="noopener noreferrer" class="btn btn-filled wa-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.019-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.33 0-4.502-.759-6.262-2.048l-.44-.33-3.088 1.035 1.035-3.088-.33-.44A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            Chat on WhatsApp
+          </a>
+          <p class="contact-detail"><span class="contact-icon">✉️</span> hello@eliteeditinghub.com</p>
+        </div>
+        <form id="contactForm" class="contact-form anim-reveal" novalidate>
+          <div class="form-group">
+            <input type="text" id="formName" name="name" placeholder="Full Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="formEmail" name="email" placeholder="Email" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" id="formPhone" name="phone" placeholder="Phone" required />
+          </div>
+          <div class="form-group">
+            <select id="formService" name="service" required>
+              <option value="" disabled selected>Service Needed</option>
+              <option value="Video Editing">Video Editing</option>
+              <option value="Graphic Design and Thumbnails">Graphic Design &amp; Thumbnails</option>
+              <option value="Social Media Management">Social Media Management</option>
+              <option value="Copywriting and Content Writing">Copywriting &amp; Content Writing</option>
+              <option value="All Services">All Services</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea id="formMessage" name="message" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-filled btn-full">Send Message</button>
+        </form>
+      </div>
+    </div>
+    <div class="section-divider"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="nav-logo">Elite Editing Hub</span>
+        <p class="footer-tagline">Crafting Elite Content. Building Empires.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+        </a>
+        <a href="#" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+        </a>
+        <a href="https://wa.me/916284621183" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Elite Editing Hub. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- CDN Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
